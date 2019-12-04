@@ -1,2 +1,2 @@
 import './index.css'
-import './ladder_shaped.scss'
+import './ladder_shaped.css'

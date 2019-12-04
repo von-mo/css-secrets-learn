@@ -1,3 +1,85 @@
-.hello {
-  color: aquamarine;
+section {
+  margin-bottom: 30px;
+}
+
+.common {
+  margin-bottom: 20px;
+}
+
+/* 边框 */
+.inner_border_container_first {
+  width: 300px;
+  background: #655;
+  padding: 0.8em;
+}
+
+.inner_border {
+  background: tan;
+  border-radius: 0.8em;
+  padding: 1em;
+}
+
+.inner_border_container_second {
+  width: 300px;
+  background: tan;
+  border-radius: 0.8em;
+  padding: 1em;
+  box-shadow: 0 0 0 0.6em #655;
+  outline: 0.9em solid #655;
+  margin: 20px 14px 30px;
+}
+
+/* 渐变 */
+.linear_gradient_bottom {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(#fb3 30%, #58a 0%);
+  background-size: 100% 30px;
+}
+
+.linear_gradient_right {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(to right, #fb3 50%, #58a 0);
+  background-size: 30px 100%;
+}
+
+.linear_gradient_bias {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(
+    45deg,
+    #fb3 25%,
+    #58a 0,
+    #58a 50%,
+    #fb3 0,
+    #fb3 75%,
+    #58a 0
+  );
+  background-size: 42px 42px;
+}
+
+.linear_gradient_repeat {
+  width: 300px;
+  height: 100px;
+  /* background: repeating-linear-gradient(45deg, #fb3, #58a 30px); */
+  /* background: repeating-linear-gradient(60deg, #fb3, #fb3 15px, #58a 0, #58a 30px); */
+  background: repeating-linear-gradient(
+    30deg,
+    #79b,
+    #79b 15px,
+    #58a 0,
+    #58a 30px
+  );
+}
+
+.linear_gradient_grid {
+  width: 300px;
+  height: 100px;
+  background : #58a;
+  background-image: linear-gradient(white 2px, transparent 0),
+    linear-gradient(90deg, white 2px, transparent 0),
+    linear-gradient(hsla(0, 0%, 100%, 0.3) 1px, transparent 0),
+    linear-gradient(90deg, hsla(0, 0%, 100%, 0.3) 1px, transparent 0);
+  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
 }

@@ -62,7 +62,7 @@ module.exports = {
         }
       },
       {
-        test: /\.s?css$/,
+        test: /\.css$/,
         use: [
           {
             loader: "style-loader"
